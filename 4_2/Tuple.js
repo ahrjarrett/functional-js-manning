@@ -1,4 +1,4 @@
-const Tuple = function( /* types */ ){
+const Tuple = function( /* types */ ) {
 
   const typeInfo = Array.prototype.slice.call(arguments, 0)
 
