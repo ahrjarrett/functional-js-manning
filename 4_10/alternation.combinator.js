@@ -7,9 +7,14 @@ const alt = R.curry((fn1, fn2, val) => fn1(val) || fn2(val))
  * nesting functions that return values from their
  * closures */
 
-/* OR defined less succinctly: */
-//const alt = function(fn1, fn2) {
-//  return function(val) {
-//    return fn1(val) || fn2(val)
-//  }
-//}
+module.exports = alt
+
+/* alt :: defined less succinctly: */
+
+/*
+const alt = function(fn1, fn2) {
+  return function(val) {
+    return fn1(val) || fn2(val)
+  }
+}
+*/

@@ -6,6 +6,7 @@
 - 4.4 -> String.util.js cont'd (asName, explode, first, parseUrl, StringPair type)
 - 4.5 -> String.countWords
 - 4.8 -> Helper Functions, Function.prototype.compose
+- 4.10 -> Combinators :: alt, seq, fork
 
 ### todo:
 - 4.4 -> fix type in 4.2 Tuple.js so you can create StringPair type (4.4, p. 92)
