@@ -25,7 +25,7 @@
  * case of fmap
  */
 
-R = require('ramda')
+const R = require('ramda')
 
 
 class Wrapper {

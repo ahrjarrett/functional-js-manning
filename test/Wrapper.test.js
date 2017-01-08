@@ -1,7 +1,15 @@
 const R = require('ramda')
-const Wrapper = require('./Wrapper')
+const Wrapper = require('../Wrapper')
 const wrap = (val) => new Wrapper(val)
 
+describe('', () => {
+  R.identity
+})
+
+
+/* remove crufty stuff below!
+ * maybe add a notes directory to put this in?
+ */
 
 // testing...
 const wrappedValue = wrap('Prof Bros is pretty rad.')
