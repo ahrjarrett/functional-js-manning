@@ -10,6 +10,8 @@
 - 5.01 -> Wrapper Class that unwraps with `wrappedObj.map(identity)`
 
 ### todo:
+- flatten repo!
+- write tests for functions individually, as you flatten
 - 4.4 -> fix type in 4.2 Tuple.js so you can create StringPair type (4.4, p. 92)
 - 4.4 -> add testing
 - 4.4 -> assign each to module.exports
