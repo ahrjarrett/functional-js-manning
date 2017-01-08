@@ -7,6 +7,7 @@
 - 4.5 -> String.countWords
 - 4.8 -> Helper Functions, Function.prototype.compose
 - 4.10 -> Combinators :: alt, seq, fork
+- 5.01 -> Wrapper Class that unwraps with `wrappedObj.map(identity)`
 
 ### todo:
 - 4.4 -> fix type in 4.2 Tuple.js so you can create StringPair type (4.4, p. 92)
