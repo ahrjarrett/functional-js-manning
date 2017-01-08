@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "tdd": "mocha -w -R spac"
+    "tdd": "mocha -w -R spec"
   },
   "keywords": [],
   "author": "",
