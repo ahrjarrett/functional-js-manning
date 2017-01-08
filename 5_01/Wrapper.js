@@ -29,6 +29,8 @@ class Wrapper {
 // wrap :: A -> Wrapper(A)
 const wrap = (val) => new Wrapper(val)
 
+module.exports = wrap
+
 
 // testing...
 const wrappedValue = wrap('Prof Bros is pretty rad.')
@@ -36,6 +38,4 @@ console.log(wrappedValue.map(R.identity)) //-> 'Prof Bros is pretty rad.'
 wrappedValue.map(console.log) //-> 'Prof Bros is pretty rad.'
 // notice how the two above are A -> B, then B-> A
 
-console.log(wrappedValue.map(R.toUpper)) //-> 'Prof Bros is pretty rad.'
-
-
+console.log(wrappedValue.map(R.toUpper)) //-> 'PROS BROS IS PRETTY RAD.'
