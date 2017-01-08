@@ -3,9 +3,26 @@
  * unwrap with an identity function
  */
 
-/* you’re mapping the identity function
+/* function signatures:
+ * map : (A -> B) -> A -> B
+ * wrap : A -> Wrapper(A)
+ * fmap : (A, B) -> Wrapper[A] -> Wrapper[B]
+ */
+
+/* map: you’re mapping the identity function
  * over the container to extract the value
- * `as is` from the container
+ * “as is” from the container
+ */
+
+/* fmap: is a functor that unwraps a
+ * box, performs an operation on it,
+ * and puts it in a different box
+ */
+
+/* todo:
+ * consider adding wrap function below
+ * to Wrapper.prototype.wrap, as in the
+ * case of fmap
  */
 
 R = require('ramda')
@@ -16,7 +33,6 @@ class Wrapper {
     this._value = value
   }
 
-  // map : (A -> B) -> A -> B
   map(f) {
     return f(this._value)
   }
@@ -26,16 +42,10 @@ class Wrapper {
   }
 }
 
-// wrap :: A -> Wrapper(A)
 const wrap = (val) => new Wrapper(val)
 
-module.exports = wrap
+Wrapper.prototype.fmap = function(f) {
+  return wrap(f(this._value))
+}
 
-
-// testing...
-const wrappedValue = wrap('Prof Bros is pretty rad.')
-console.log(wrappedValue.map(R.identity)) //-> 'Prof Bros is pretty rad.'
-wrappedValue.map(console.log) //-> 'Prof Bros is pretty rad.'
-// notice how the two above are A -> B, then B-> A
-
-console.log(wrappedValue.map(R.toUpper)) //-> 'PROS BROS IS PRETTY RAD.'
+module.exports = Wrapper
