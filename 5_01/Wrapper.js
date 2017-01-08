@@ -3,6 +3,11 @@
  * unwrap with an identity function
  */
 
+/* you’re mapping the identity function
+ * over the container to extract the value
+ * `as is` from the container
+ */
+
 R = require('ramda')
 
 
@@ -28,3 +33,9 @@ const wrap = (val) => new Wrapper(val)
 // testing...
 const wrappedValue = wrap('Prof Bros is pretty rad.')
 console.log(wrappedValue.map(R.identity)) //-> 'Prof Bros is pretty rad.'
+wrappedValue.map(console.log) //-> 'Prof Bros is pretty rad.'
+// notice how the two above are A -> B, then B-> A
+
+console.log(wrappedValue.map(R.toUpper)) //-> 'Prof Bros is pretty rad.'
+
+
