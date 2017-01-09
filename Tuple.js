@@ -29,3 +29,4 @@ const Tuple = function( /* types */ ) {
   return _T
 }
 
+module.exports = Tuple
