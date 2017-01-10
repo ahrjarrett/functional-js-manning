@@ -1,4 +1,4 @@
-const Wrapper = require('./Wrapper')
+const Wrapper = require('./Wrapper.monad')
 const wrap = new Wrapper()
 
 const Empty = function(_) {

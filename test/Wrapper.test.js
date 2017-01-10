@@ -1,5 +1,5 @@
 const R = require('ramda')
-const Wrapper = require('../src/Wrapper')
+const Wrapper = require('../src/Wrapper.monad')
 const wrap = (val) => new Wrapper(val)
 
 describe('wrap:', () => {

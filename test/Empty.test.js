@@ -1,6 +1,6 @@
 const Empty = require('../src/Empty.monad')
 const R = require('ramda')
-const Wrapper = require('../src/Wrapper')
+const Wrapper = require('../src/Wrapper.monad')
 
 const empty = () => new Empty()
 const wrap = (val) => new Wrapper(val)
@@ -19,6 +19,9 @@ describe('Empty monad:', () => {
      * read mocha docs, learn more about monads
      * to troubleshoot?
      */
+
+    //half(13).should.eql('Empty {}')
+
     const testValue = half(13)
     half(13).should.eql(testValue)
   })
