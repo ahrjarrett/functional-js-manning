@@ -28,3 +28,12 @@ describe('fmap:', () => {
     five.map(R.identity).should.eql(5)
   })
 })
+
+describe('Wrapper.of [static]', () => {
+
+  it('of should ', () => {
+    Wrapper.of('She’ll be comin’ round the mountain...')
+      .map(R.identity)
+      .should.eql(Wrapper('She’ll be comin’ round the mountain...'))
+  })
+})
