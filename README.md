@@ -14,6 +14,7 @@
 - 4.?? composition challenge
 
 ### todo:
+- 5.? add mocha tests for Maybe, Either, IO monads
 ~~- flatten repo!~~
 - write tests for functions individually, as you flatten
 - 4.4 -> fix type in 4.2 Tuple.js so you can create StringPair type (4.4, p. 92)

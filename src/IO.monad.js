@@ -29,6 +29,8 @@
 
 */
 
+const _ = require('lodash')
+
 class IO {
   constructor(effect) {
     if(!_.isFunction(effect)) {
