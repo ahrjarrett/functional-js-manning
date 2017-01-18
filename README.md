@@ -15,6 +15,7 @@
 
 ### todo:
 - 5.? add mocha tests for Maybe, Either, IO monads
+- 5.? figure out how to add classes to module.exports..wrap in an IFFE?
 ~~- flatten repo!~~
 - write tests for functions individually, as you flatten
 - 4.4 -> fix type in 4.2 Tuple.js so you can create StringPair type (4.4, p. 92)

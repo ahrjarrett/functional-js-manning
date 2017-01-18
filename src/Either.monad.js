@@ -116,3 +116,9 @@ class Right extends Either {
     return `Either.Right(${this.value})`
   }
 }
+
+// todo: how to add to exports object?
+
+/*
+module.exports = Either
+*/
