@@ -14,6 +14,7 @@
 - 4.?? composition challenge
 
 ### todo:
+- 5.? **get tests for Empty and Wrapper working**
 - 5.? add mocha tests for Maybe, Either, IO monads
 - 5.? figure out how to add classes to module.exports..wrap in an IFFE?
 ~~- flatten repo!~~
