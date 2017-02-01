@@ -5,17 +5,17 @@ const wrap = (val) => new Wrapper(val)
 describe('wrap:', () => {
   const wrappedValue = wrap('Prof Bros is pretty rad.')
 
-  it('puts stuff in a box', () => {
-    wrappedValue.map(R.identity).should.eql('Prof Bros is pretty rad.')
-  })
+  //it('puts stuff in a box', () => {
+  //  wrappedValue.map(R.identity).should.eql('Prof Bros is pretty rad.')
+  //})
 })
 
 describe('map:', () => {
   const wrappedValue = wrap('Prof Bros ARE pretty rad...')
 
-  it('performs an operation on the stuff in the box', () => {
-    wrappedValue.map(R.toUpper).should.eql('PROF BROS ARE PRETTY RAD...')
-  })
+  //it('performs an operation on the stuff in the box', () => {
+  //  wrappedValue.map(R.toUpper).should.eql('PROF BROS ARE PRETTY RAD...')
+  //})
 })
 
 describe('fmap:', () => {
@@ -24,16 +24,16 @@ describe('fmap:', () => {
   const two = wrap(2)
   const five = two.fmap(plus3) //-> Wrapper(5)
 
-  it('shares functionality of map with Wrapper instances', () => {
-    five.map(R.identity).should.eql(5)
-  })
+  //it('shares functionality of map with Wrapper instances', () => {
+  //  five.map(R.identity).should.eql(5)
+  //})
 })
 
 describe('Wrapper.of [static]', () => {
 
-  it('of should ', () => {
-    Wrapper.of('She’ll be comin’ round the mountain...')
-      .map(R.identity)
-      .should.eql(Wrapper('She’ll be comin’ round the mountain...'))
-  })
+  //it('of should ', () => {
+  //  Wrapper.of('She’ll be comin’ round the mountain...')
+  //    .map(R.identity)
+  //    .should.eql(Wrapper('She’ll be comin’ round the mountain...'))
+  //})
 })
