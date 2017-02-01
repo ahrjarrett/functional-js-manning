@@ -22,6 +22,12 @@ describe('fork function:', () => {
   it('should find the average when joining', () => {
     computeAvgGrade([92, 89, 95 ]).should.eql(92)
   })
+
+  it('should be agnostic w/r/t arguments', () => {
+    // good example of a use for R.identity:
+    const timesTwo = fork((x) => x + x, R.identity, R.identity)
+    timesTwo(6).should.eql(12)
+  })
 })
 
 describe('toLetterGrade:', () => {
