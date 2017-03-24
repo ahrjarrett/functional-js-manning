@@ -7,4 +7,4 @@ if(!String.prototype.first) {
 
 console.log(`scientologists are expected to write
              such reports because they believe, by
-             writing them...`.first(3))
+             writing them...`.first(3)) // => sci
