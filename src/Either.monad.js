@@ -2,42 +2,42 @@
  * Either’s constructor fn:
  * works for either type, can hold an exception
  * or a successful value (right bias).
- *
+
  * Either.fromNullable [static]:
  * IMPORTANT -- takes the Left case w/
  * invalid value, or else the Right
- *
+
  * Either.of [static]:
  * creates new instance holding a value on the Right
- *
+
  * map:
  * --case Right: tranforms the value on the Right structure
  * by mapping a fn to it
  * --case Left: does nothing (noop)
- *
+
  * get value:
  * --case Right: use logic in constructor fn; that is,
  * extract the Right value of the structure if it exists
  * --case Left: produce a TypeError
- *
+
  * getOrElse:
  * --case Right: extrats the Right value
  * --case Left: returns the passed-in default
- *
+
  * orElse:
  * --case Right: noop
  * --case Left: applies a given fn to Left value
- *
+
  * chain:
  * --case Right: applies a function to a Right
  * and returns that value
  * --case Left: noop
- *
+
  * getOrElseThrow:
  * throws an exception with the value only
  * on the Left structure; otherwise ignores the
  * the exception and returns the value value
- *
+
  * filter:
  * --case Right: if value is present and meets
  * the given predicate, returns a Right describing
