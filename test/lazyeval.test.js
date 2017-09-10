@@ -3,7 +3,7 @@
 const _ = require('lodash')
 const R = require('ramda')
 
-describe('lazy eval', () => {
+describe('lazy eval w/ lodash', () => {
   it('returns the correct length, indicating lazy eval', () => {
     const result = _.chain(_.range(200))
                     .map(x => x * x)
@@ -14,5 +14,4 @@ describe('lazy eval', () => {
     result.length.should.eql(3)
   })
 })
-
 
